@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+<title>Huddle</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+  body {
+    background: url(images/bg-desktop.svg) no-repeat;
+    background-color: hsl(257, 40%, 49%);
+    color: #fff;
+    padding: 16px 48px;
+  }
+  .header {
+    padding: 24px 0;
+  }
+  .main__content {
+    padding: 12px 0;
+  }
+  .main__container {
+    display: flex;
+  }
+  .social__medias {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+  }
+  .social__medias a {
+    width: 32px;
+    color: #fff;
+    transition: color .3s;
+  }
+  .social__medias a:hover {
+    color: hsl(300, 69%, 71%);
+  }
+  .main__content__text {
+    display: flex;
+    flex-direction: column;
+    padding: 48px;
+    row-gap: 24px;
+    max-width: 350px;
+  }
+  .register__button {
+    background-color: #fff;
+    color: #6c5d99;
+    text-align: center;
+    width: max-content;
+    padding: 12px 48px;
+    border-radius: 25px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    transition: .3s;
+  }
+  .register__button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+  }
+  h1 {
+    line-height: 55px;
+  }
+  @media (max-width: 375px) {
+    body {
+    background: url(images/bg-mobile.svg) no-repeat;
+    background-color: hsl(257, 40%, 49%);
+    padding: 0 36px;
+    }
+    .header {
+      padding: 28px 0 40px 0;
+    }
+    .main__container {
+      flex-direction: column;
+      text-align: center;
+    }
+    .logo {
+      width: 45%;
+    }
+    .main__image {
+      width: 100%;
+    }
+    .main__content__text {
+      align-items: center;
+      padding: 48px 0;
+    }
+    h1 {
+      font-size: 26px;
+      line-height: 35px;
+    }
+    .register__button {
+      padding: 12px 76px;
+    }
+    .social__medias {
+      justify-content: center;
+    }
+    p {
+      max-width: 280px;
+    }
+  }
+</style>
+</head>
+<body>
+  <header class="header">
+    <img src="images/logo.svg" alt="" class="logo">
+  </header>
+  <main class="main__content">
+    <div class="main__container">
+      <div class="main__image__container">
+        <img src="images/illustration-mockups.svg" alt="" class="main__image">
+      </div>
+      <div class="main__content__text">
+        <h1>Build The Community Your Fans Will Love</h1>
+        <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+          Create connections with your users as you engage in genuine discussion. </p>
+        <a href="/" class="register__button">Register</a>
+        </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="social__medias">
+      <a href="/"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="/"><i class="fab fa-twitter fa-2x"></i></a>
+      <a href="/"><i class="fab fa-instagram fa-2x"></i></a>
+    </div>
+  </footer>
+</body>
+</html>
